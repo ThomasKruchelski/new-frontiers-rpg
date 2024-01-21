@@ -2,16 +2,15 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
-  project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+  logo: <span>New Frontiers</span>,
+  // chat: {
+  //   link: 'https://discord.com',
+  // },
+  search: {
+    placeholder: 'Faça sua busca...',
   },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'New Frontiers RPG - made by Thomas',
   },
 }
 
