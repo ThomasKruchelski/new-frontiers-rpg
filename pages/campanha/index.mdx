@@ -4,8 +4,6 @@ import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 import { useSpring } from 'react-spring';
 
-<Bleed >
-
 export function Cobe() {
   const canvasRef = useRef();
   const pointerInteracting = useRef(null);
@@ -20,6 +18,7 @@ export function Cobe() {
     },
   }));
   useEffect(() => {
+    let mapSamples = 6000;
     let phi = 0;
     let width = 0;
     const onResize = () => canvasRef.current && (width = canvasRef.current.offsetWidth)
@@ -30,32 +29,40 @@ export function Cobe() {
       width: width * 2,
       height: width * 2,
       phi: 0,
-      theta: 0.3,
+      theta: 0.1,
       dark: 1,
+      opacity: 0.8,
       diffuse: 3,
-      mapSamples: 16000,
+      mapSamples: 15000,
       mapBrightness: 1.2,
-      baseColor: [1, 1, 1],
-      markerColor: [251 / 255, 100 / 255, 21 / 255],
-      glowColor: [1.2, 1.2, 1.2],
-      markers: [],
+      baseColor: [0.75, 0.75, 0.75],
+      markerColor: [0.9, 0.7, 0.1],
+      glowColor: [1, 1, 1],
+      markers: [
+        { location: [37.7595, -122.4367], size: 0.03 },
+        { location: [40.7128, -74.006], size: 0.1 },
+        { location: [35.652832 , 139.839478], size: 0.05},
+        { location: [25.0657, 55.17128], size: 0.05}
+      ],
       onRender: (state) => {
         // This prevents rotation while dragging
         if (!pointerInteracting.current) {
           // Called on every animation frame.
           // `state` will be an empty object, return updated params.
           phi += 0.005
-        } 
+        }
+        if(mapSamples < 20000){
+            state.mapSamples = mapSamples;
+            mapSamples += 150;
+            console.log(mapSamples)
+        }
         state.phi = phi + r.get()
         state.width = width * 2
         state.height = width * 2
       }
     })
     setTimeout(() => canvasRef.current.style.opacity = '1')
-    return () => { 
-      globe.destroy();
-      window.removeEventListener('resize', onResize);
-    }
+    return () => globe.destroy()
   }, [])
   return <div style={{
     width: '100%',
@@ -109,9 +116,8 @@ export function Cobe() {
   </div>
 }
 
-<Cobe/>
-
-
+<Bleed >
+  <Cobe/>
 </Bleed>
 
 
