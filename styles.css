@@ -1,0 +1,23 @@
+.flex{
+    display: flex;
+}
+
+.relative{
+    position: relative;
+}
+
+.w-full{
+    width: 100%;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.float-right{
+    float: right;
+}
+
+.text-center{
+    text-align: center;
+}
