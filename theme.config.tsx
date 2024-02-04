@@ -12,6 +12,7 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'New Frontiers RPG - made by Thomas',
   },
+  faviconGlyph: "🌌",
 }
 
 export default config
