@@ -25,3 +25,15 @@
 .text-center{
     text-align: center;
 }
+
+.defense-green, .defense-green h3{
+    color:#67E480 !important
+}
+
+    .atack-red, .atack-red h3{
+    color:#EB4242 !important
+}
+
+.neutral-gray, .neutral-gray h3{
+    color: #4b475c !important
+}
