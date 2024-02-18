@@ -18,7 +18,8 @@ const config: DocsThemeConfig = {
     placeholder: 'Faça sua busca...',
   },
   toc: {
-    backToTop: true
+    backToTop: true,
+    
   },
   editLink:{
     text:"Quero editar essa página"
