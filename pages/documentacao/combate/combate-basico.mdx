@@ -1,20 +1,52 @@
-# Dano
+# Combate Básico 
 
-Dado de dano x MBA = dano na vida do robô
+## Jogada de Ataque
 
-M.B.A. = Multiplicador Base de Ataque = valor que multiplicado aos dados no jogo vão resultar no dano aos alvos
+Quando você ataca, faz uma jogada de ataque, rola um d20 e soma seu bônus de ataque. Se o resultado da jogada
+é igual ou maior que a classe de armadura do alvo, você acerta e causa dano.
 
-MBA é diferente pra cada arma
+Seu bônus de ataque é igual o nível da sua Cybersuit + o número do atributo Scanner.
 
-Multiplicador adicional = atributo mod.pwr + talento de adição de dano + estado de energia
+Acertos e erros automáticos. Ao fazer sua jogada de ataque, um 1 natural (quando o resultado do d20 é 1) sempre
+é um erro, e um 20 natural (quando o resultado do d20 é 20) sempre é um acerto, não importando seu bônus de 
+ataque ou a classe de armadura do alvo. Um 20 natural também pode ser um acerto crítico.
 
-Armas de energia -> MBA = 8 a 12
-Armas físicas -> MBA = 5 a 8
+## Dano
 
-para cada estado de energia apartir do nível 2 -> soma +2 no multiplicador adicional excete no último nível que é somado apenas +1
+Quando você acerta um ataque, causa dano. Esse dano reduz os pontos de vida do inimigo.
+
+Você rola outros dados para descobrir quanto dano causou. O tipo de dado depende da arma ou ataque utilizado.
+
+Após rolar os dados, você soma o número de seu atributo power, após obter esse resultado você irá multiplicar
+o resultado pelo **Multiplicador base de ataque** que tambem vai ser chamado de MBA ao longo dessa
+documentação. O MBA depende da arma que você está utilizando mas pode ser aumentadoatravés de talentos de 
+Cybersuit e outras situações.
+
+> Nesse exemplo: Possuo uma Cybersuit com 8 de Power e ela esta usando o **rifle de energia** que causa 
+>1d8 de dano e possuí MBA = 4
+
+> Ao acertar o ataque tirei o número 6 no d8, somando isso ao atributo power obtenho o número 14.
+> Por fim multiplicando ele pelo meu MBA que é 4, obtenho um total de __56 pontos de dano!__
+
+## Classe de armadura
+
+A classe de Armadura(CA) é o número no dado que o inimigo deve tirar para poder acerta-lo. Caso o número for menor
+ou igual a sua CA ele erra e a rolagem de dano é anulada.
+
+Sua CA é igual o seu atributo Destreza e pode ser aumentado através de talentos.
+
+## Pontos de vida
+
+## Escudo de energia
+
+## Ordem dos turnos & Iniciativa
+
+## Rodada de Combate
+
+{/* para cada estado de energia apartir do nível 2 -> soma +2 no multiplicador adicional excete no último nível que é somado apenas +1
 Exemplo:
 Nível 1 -> MBA = -2
 Nível 2 -> MBA = 0
 Nível 3 -> MBA = +2
 Nível 4 -> MBA = +4
-Nível 5 -> MBA = +5
+Nível 5 -> MBA = +5 */}
