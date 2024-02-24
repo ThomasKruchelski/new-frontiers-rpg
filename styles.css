@@ -57,3 +57,10 @@
     border-color: rgba(38,38,38);
 }
 
+.arma-slot h3{
+    border-bottom: 1px solid rgba(229,229,229,.7);
+}
+
+:is(html[class~=dark] .arma-slot h3){
+    border-color: rgba(38,38,38);
+}

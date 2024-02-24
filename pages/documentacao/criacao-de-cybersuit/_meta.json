@@ -1,8 +1,8 @@
 {
     "info":{
-        "title":"Informações"
+        "title":"Informações -"
     },
-    "atributos":"Atributos",
-    "talentos":"Talentos",
-    "itens-equipamentos":"Armas & Equipamentos"
+    "atributos":"Atributos -",
+    "talentos":"Talentos -",
+    "itens-equipamentos":"Inventário -"
 }

@@ -32,19 +32,21 @@ const config: DocsThemeConfig = {
     text: 'New Frontiers RPG - made by Thomas',
   },
   faviconGlyph: "🌌",
-  // sidebar: {
-  //   titleComponent({ title, type }) {
+  sidebar: {
+    titleComponent({ title, type }) {
       
-  //     if (title === 'Informações' ||
-  //         title === 'Atributos' ||
-  //         title === 'Talentos' ||
-  //         title === 'Armas & Equipamentos'
-  //     ) {
-  //       return <>{title} <p className='new'> Novo!</p></>
-  //     }
-  //     return <>{title}</>
-  //   }
-  // }
+      if (title === 'Informações -' ||
+          title === 'Atributos -' ||
+          title === 'Talentos -' ||
+          title === 'Talentos Cybersuit -' ||
+          title === 'Combate Básico -' ||
+          title === 'Inventário -'
+      ) {
+        return <>{title} <p className='new'> Novo!</p></>
+      }
+      return <>{title}</>
+    }
+  }
   
 }
 
