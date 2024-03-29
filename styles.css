@@ -1,66 +1,74 @@
-.flex{
+.flex {
     display: flex;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
-.w-full{
+.w-full {
     width: 100%;
 }
 
-.w-50{
-    width:50%;
+.w-50 {
+    width: 50%;
 }
 
-.justify-center{
+.justify-center {
     justify-content: center;
 }
 
-.float-right{
+.float-right {
     float: right;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.defense-green, .defense-green h3{
-    color:#67E480 !important
+.defense-green,
+.defense-green h3 {
+    color: #67E480 !important
 }
 
-    .atack-red, .atack-red h3{
-    color:#EB4242 !important
+.atack-red,
+.atack-red h3 {
+    color: #EB4242 !important
 }
 
-.neutral-gray, .neutral-gray h3{
+.cumstom-purple,
+.cumstom-purple h3 {
+    color: #802075 !important
+}
+
+.neutral-gray,
+.neutral-gray h3 {
     color: #4b475c !important
 }
 
-.new{
-    color:#ee9b00;
+.new {
+    color: #ee9b00;
     padding-left: .5rem;
 }
 
-.box-border{
-    border: 1px solid rgba(229,229,229,.7);
+.box-border {
+    border: 1px solid rgba(229, 229, 229, .7);
     padding: .5rem;
     margin-top: 2rem;
 }
 
-.box-border h3{
+.box-border h3 {
     margin-top: 0px;
 }
 
-:is(html[class~=dark] .box-border){
-    border-color: rgba(38,38,38);
+:is(html[class~=dark] .box-border) {
+    border-color: rgba(38, 38, 38);
 }
 
-.arma-slot h3{
-    border-bottom: 1px solid rgba(229,229,229,.7);
+.arma-slot h3 {
+    border-bottom: 1px solid rgba(229, 229, 229, .7);
 }
 
-:is(html[class~=dark] .arma-slot h3){
-    border-color: rgba(38,38,38);
+:is(html[class~=dark] .arma-slot h3) {
+    border-color: rgba(38, 38, 38);
 }
